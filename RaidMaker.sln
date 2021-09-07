@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaidMaker", "RaidMaker\RaidMaker.csproj", "{35F13F93-B957-46B5-8A44-6F0D28A795DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaidMaker.Tests", "RaidMaker.Tests\RaidMaker.Tests.csproj", "{03D5B1B6-3B67-4879-8693-D58057C3616D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{35F13F93-B957-46B5-8A44-6F0D28A795DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F13F93-B957-46B5-8A44-6F0D28A795DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F13F93-B957-46B5-8A44-6F0D28A795DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D5B1B6-3B67-4879-8693-D58057C3616D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D5B1B6-3B67-4879-8693-D58057C3616D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D5B1B6-3B67-4879-8693-D58057C3616D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D5B1B6-3B67-4879-8693-D58057C3616D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
