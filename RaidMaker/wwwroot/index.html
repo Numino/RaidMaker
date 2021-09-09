@@ -7,9 +7,9 @@
 
 <div class="">
     <h1>RaidMaker</h1>
-    <label>Discord Input<textarea></textarea>
+    <label>Discord Input<textarea ng-model="discordText"></textarea>
     </label>
-    <button>Add Raid</button>
+    <button ng-click="sendDiscordText()">Add Raid</button>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
@@ -19,10 +19,20 @@
 
     app.controller('MainPageController',
         function ($http, $scope) {
-          
+        $scope.discordText = "";
 
+            $scope.sendDiscordText = function () {             
+
+                $http.post("api/raid",
+                    {
+                        DiscordText: $scope.discordText,
+                    }
+                ).then(
+                    function (response) {
+                        console.log(response);
+                    });
+            };
         });
-
 </script>
 </body>
 </html>

@@ -7,9 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="NUnit" Version="3.12.0"/>
-        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1"/>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0"/>
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RaidMaker\RaidMaker.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="TestData\sundaygruulmag.txt" />
+      <EmbeddedResource Include="TestData\sundaygruulmag.txt" />
+      <None Remove="TestData\mondayssctk.txt" />
+      <EmbeddedResource Include="TestData\mondayssctk.txt" />
     </ItemGroup>
 
 </Project>

@@ -11,9 +11,19 @@ namespace RaidMaker.Api
         }
 
         [HttpPost("api/raid")]
-        public void Post()
+        public AddRaidResponse AddRaid([FromBody]AddRaidRequest request)
         {
-            
+            return new AddRaidResponse {Test = request.DiscordText};
         }
+    }
+
+    public class AddRaidRequest
+    {
+        public string DiscordText { get; set; }
+    }
+
+    public class AddRaidResponse
+    {
+        public string Test { get; set; }
     }
 }
