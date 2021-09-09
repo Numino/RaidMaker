@@ -38,7 +38,43 @@ namespace RaidMaker.Core
                     playerClass = Class.Druid;
                 players.Add(new Player {Role = Role.Tank, Class = playerClass, Name = split[2], SignUpPosition = int.Parse(split[1])});
             }
-            
+
+            var currentClass = Class.Unknown;
+            for (var i = tankLine; i < lines.Length; i++)
+            {
+                var line = lines[i];
+                var split = line.Split(" ");
+
+                var classOrSpec = split[0].Replace(":", "");
+                var lineStartsWithClass = LineStartsWithClass(classOrSpec);
+                if (lineStartsWithClass.Item1)
+                {
+                    currentClass = lineStartsWithClass.Item2;
+                    continue;
+                }
+                var role = Role.Dps;
+                if (classOrSpec.StartsWith("Resto") || classOrSpec.StartsWith("Holy") || classOrSpec.StartsWith("Disc"))
+                    role = Role.Healer;
+
+                if (classOrSpec == "Tentative")
+                    break;
+                if (split.Length < 2)
+                {
+                    Console.WriteLine(line);
+                    continue;
+                }
+
+                try
+                {
+                    players.Add(new Player {Role = role, Class = currentClass, Name = split[2], SignUpPosition = int.Parse(split[1])});
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(line);
+                    throw;
+                }
+                
+            }
 
 
             return new DiscordRaid
@@ -48,6 +84,19 @@ namespace RaidMaker.Core
                 Date = DateTime.ParseExact(lines[6].Replace(":CMcalendar: ", ""), "d MMMM yyyy", CultureInfo.InvariantCulture),
                 Players = players
             };
+        }
+
+        private (bool, Class) LineStartsWithClass(string classOrSpec)
+        {
+            var classes = Enum.GetValues<Class>();
+
+            foreach (var possibleClass in classes)
+            {
+                if (classOrSpec.StartsWith(possibleClass.ToString()))
+                    return (true, possibleClass);
+            }
+
+            return (false, Class.Unknown);
         }
     }
 

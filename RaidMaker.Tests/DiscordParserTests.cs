@@ -47,5 +47,43 @@ namespace RaidMaker.Tests
             Assert.That(tanks[3].Name, Is.EqualTo("Lyri"));
             Assert.That(tanks[3].SignUpPosition, Is.EqualTo(37));
         }
+        
+        [Test]
+        public void ThenTheHealersAreParsed()
+        {
+            var healers = _result.Players.Where(x=> x.Role == Role.Healer).ToList();
+            
+            Assert.That(healers[0].Class, Is.EqualTo(Class.Druid));
+            Assert.That(healers[0].Name, Is.EqualTo("gamble/savyg"));
+            Assert.That(healers[0].SignUpPosition, Is.EqualTo(2));
+                
+            Assert.That(healers[1].Class, Is.EqualTo(Class.Druid));
+            Assert.That(healers[1].Name, Is.EqualTo("Zedeskia"));
+            Assert.That(healers[1].SignUpPosition, Is.EqualTo(9));
+                
+            Assert.That(healers[2].Class, Is.EqualTo(Class.Paladin));
+            Assert.That(healers[2].Name, Is.EqualTo("Evola"));
+            Assert.That(healers[2].SignUpPosition, Is.EqualTo(12));
+                
+            Assert.That(healers[3].Class, Is.EqualTo(Class.Paladin));
+            Assert.That(healers[3].Name, Is.EqualTo("Maevey"));
+            Assert.That(healers[3].SignUpPosition, Is.EqualTo(21));
+            
+            Assert.That(healers[4].Class, Is.EqualTo(Class.Paladin));
+            Assert.That(healers[4].Name, Is.EqualTo("celany"));
+            Assert.That(healers[4].SignUpPosition, Is.EqualTo(22));
+            
+            Assert.That(healers[5].Class, Is.EqualTo(Class.Priest));
+            Assert.That(healers[5].Name, Is.EqualTo("Aara"));
+            Assert.That(healers[5].SignUpPosition, Is.EqualTo(15));
+                
+            Assert.That(healers[6].Class, Is.EqualTo(Class.Priest));
+            Assert.That(healers[6].Name, Is.EqualTo("Trollfark"));
+            Assert.That(healers[6].SignUpPosition, Is.EqualTo(17));
+            
+            Assert.That(healers[7].Class, Is.EqualTo(Class.Shaman));
+            Assert.That(healers[7].Name, Is.EqualTo("Trynet"));
+            Assert.That(healers[7].SignUpPosition, Is.EqualTo(30));
+        }
     }
 }
