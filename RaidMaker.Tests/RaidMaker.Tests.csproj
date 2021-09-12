@@ -18,6 +18,7 @@
 
     <ItemGroup>
       <None Remove="TestData\sundaygruulmag.txt" />
+      <EmbeddedResource Include="TestData\wedsgruulmag.txt" />
       <EmbeddedResource Include="TestData\sundaygruulmag.txt" />
       <None Remove="TestData\mondayssctk.txt" />
       <EmbeddedResource Include="TestData\mondayssctk.txt" />

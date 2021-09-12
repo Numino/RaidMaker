@@ -77,11 +77,12 @@ namespace RaidMaker.Core
             }
 
 
+            var indexOf = lines[6].IndexOf(' ');
             return new DiscordRaid
             {
                 Title = lines[1].Replace(" ", "").Replace(":", "").Replace("empty", " "),
                 SubTitle = lines[3],
-                Date = DateTime.ParseExact(lines[6].Replace(":CMcalendar: ", ""), "d MMMM yyyy", CultureInfo.InvariantCulture),
+                Date = DateTime.ParseExact(lines[6].Substring(indexOf+1, lines[6].Length-indexOf-1), "d MMMM yyyy", CultureInfo.InvariantCulture),
                 Players = players
             };
         }
@@ -115,6 +116,24 @@ namespace RaidMaker.Core
         public Role Role { get; set; }
         public string Name { get; set; }
         public int SignUpPosition { get; set; }
+
+        protected bool Equals(Player other)
+        {
+            return Name == other.Name;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((Player) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (Name != null ? Name.GetHashCode() : 0);
+        }
     }
 
     public enum Role

@@ -1,0 +1,83 @@
+﻿Leader: gamble/savyg - ID: 884346088981688362
+:W: :E: :D: :N: :E: :S: :D: :A: :Y: :empty: :2: :5: :M: :A: :N: :S:
+
+Come clear gruul + mag
+‎
+:CMcalendarRed: Wed 8. Sep
+:CMcalendarRed: 8 September 2021
+‎
+:CMclockRed: 19:45 GMT+1
+:CMclockRed: 19:45
+‎
+:signupsRed: 42
+‎
+:Tanks: 7 Melee 8 :Dps:
+‎
+:Ranged: Ranged 16 :Ranged:
+‎
+:Healers: Healers 11 :Healers:
+‎
+:Tank: Tank (7):
+:Guardian: 4 Lyri
+:Guardian: 12 Entangled
+:Protection: 5 Flisfan
+:Protection: 45 Whatrior
+:Protection1: 36 yeb
+:Protection1: 44 Alzalahina
+:Protection1: 50 Fir
+‎
+:Warrior: Warrior (2):
+:Fury: 10 Hunes
+:Arms: 15 Mythios
+‎
+:Druid: Druid (4):
+:Restoration: 1 gamble/savyg
+:Restoration: 7 Zedeskia
+:Restoration: 39 Faerissa
+:Feral: 43 Vitupureja
+‎
+:Paladin: Paladin (5):
+:Retribution: 16 Silador
+:Holy1: 6 Froos
+:Holy1: 20 Evola
+:Holy1: 27 celany
+:Holy1: 29 Maevey
+‎
+:Rogue: Rogue (3):
+:Combat: 14 Xuio/Roku
+:Combat: 22 Rolias
+:Combat: 31 Felfri
+‎
+:Hunter: Hunter (3):
+:Survival: 9 ComradeTP-cha
+:Beastmastery: 28 Fed
+:Beastmastery: 41 Nakoa
+‎
+:Priest: Priest (5):
+:Shadow: 8 Swigs
+:Shadow: 11 Jaeron
+:Holy: 24 Trollfark
+:Holy: 35 Sunduk
+:Holy: 49 Aara
+‎
+:Mage: Mage (3):
+:Fire: 18 Frostii/Kimpo
+:Fire: 23 Ariakan
+:Arcane: 46 Veroc
+‎
+:Warlock: Warlock (7):
+:Destruction: 2 Arigale
+:Destruction: 17 SkoobyDoo
+:Destruction: 26 Apaguden
+:Destruction: 38 Alurith
+:Affliction: 19 Blackwound
+:Affliction: 34 Iandrasil
+:Affliction: 42 Rikdo
+‎
+:Shaman: Shaman (3):
+:Enhancement: 3 Nirram/Tiros
+:Restoration1: 21 Trynet
+:Elemental: 30 Kayodi
+‎
+:Tentative: Tentative (1) : :Destruction: 13 dlo,
+:Absence: Absence (8) : 25 Moonoom, 32 MamStrach, 33 Gorthug, 37 Muzzythetank, 40 Monkeyshine, 47 Mαντραχαλος/thenorther, 48 Baron, 51 Lorim,
